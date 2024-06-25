@@ -15,7 +15,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: print the db name
-      run echo "db_name:" ${{env.db_name}}
+      run: echo "db_name:" ${{env.db_name}}
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
