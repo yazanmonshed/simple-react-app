@@ -4,11 +4,9 @@ on:
     branches:
       - main
 jobs:
-  env:
-   db_pass:
-   db_name: user_db
-   db_user:
   deploy:
+    env:
+     db_name:
     runs-on: ubuntu-latest
 
     steps:
