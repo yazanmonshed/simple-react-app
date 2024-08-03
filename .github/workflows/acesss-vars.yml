@@ -17,5 +17,7 @@ jobs:
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
       - name: "print data added"
         run: echo "${{env.data_added}}" 
+      - name: "print data"
+        run: ${{ vars.JOB_NAME }}
         env:
           First_Name: Mona
