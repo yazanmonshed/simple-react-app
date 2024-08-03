@@ -5,6 +5,7 @@ on:
 
 env:
   DAY_OF_WEEK: Monday
+  data_added: "two  days ago"
 
 jobs:
   greeting_job:
@@ -14,5 +15,7 @@ jobs:
     steps:
       - name: "Say Hello Mona it's Monday"
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+      - name: "print data added"
+        run: echo "${{env.data_added}}" 
         env:
           First_Name: Mona
