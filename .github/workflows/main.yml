@@ -8,6 +8,7 @@ jobs:
     env:
      db_name:
     runs-on: ubuntu-latest
+    container: node
 
     steps:
     - name: Checkout code
